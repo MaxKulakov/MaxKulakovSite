@@ -2,21 +2,36 @@ body{
     background-color: #f8f1f1;
     color: #19456b;
 }
+img{
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 9em;
+    font-size: 8em;
     text-align: center;
     margin-left: 0.1em;
     margin-right: 0.1em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
 }
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: left;
+    margin-top: 0.3em;
+    margin-left: 1.1em;
+    margin-right: 2em;
+    margin-bottom: 0.3em;
+}
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.4em;
+    text-align: left;
     margin-top: 0.3em;
     margin-left: 2em;
     margin-right: 2em;
