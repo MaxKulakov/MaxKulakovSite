@@ -13,8 +13,8 @@ h1{
     font-weight: 800;
     font-size: 8em;
     text-align: left;
-    margin-left: 0.32em;
-    margin-right: 0.32em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
 }
@@ -24,16 +24,19 @@ h2{
     font-size: 2.5em;
     text-align: left;
     margin-top: 0.3em;
-    margin-left: 1.1em;
-    margin-right: 2em;
+    margin-left: 1.65em;
+    margin-right: 1.65em;
     margin-bottom: 0.3em;
 }
 p{
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.55;
+    letter-spacing: 0.005em;
+    word-spacing: 0.08em;
     font-weight: 400;
     font-size: 1.4em;
     text-align: left;
     margin-top: 0.3em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
