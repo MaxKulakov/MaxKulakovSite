@@ -2,44 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/styles.css">
     <title>VALERIA ZEVAKINA х 🧑‍💻KULAKOV.DESIGN</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="image/png" rel="icon" href="Image/favicon-256x256.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
+
+<script>
+  function rollUpCsit() {
+      document.getElementById("myDropdown1").classList.toggle("whr-drop-hide");
+  }
+  function rollUpDSC() {
+      document.getElementById("myDropdown2").classList.toggle("whr-drop-hide");
+  }
+  function rollUpNovikov() {
+      document.getElementById("myDropdown3").classList.toggle("whr-drop-hide");
+  }
+  function rollUpBoho() {
+      document.getElementById("myDropdown4").classList.toggle("whr-drop-hide");
+  }
+  function rollUpLoyal() {
+      document.getElementById("myDropdown5").classList.toggle("whr-drop-hide");
+  }
+  function rollUpJedi() {
+      document.getElementById("myDropdown6").classList.toggle("whr-drop-hide");
+  }
+
+
+</script>
+
+
 <style>
-  body{
-      background-color: #f8f1f1;
-      margin: 0px;
-      text-align: center;
-      color: #fdd1ba;
-
-      background: url("Image/Valeria.jpg");
-
-      background-size: cover; /* Resize the background image to cover the entire container */
-      /*background-color: #f8f1f1;*/
-      margin: 0;
-      padding: 0;
-      background-repeat: repeat-y;
+body {
+    min-width: 700px;
+    max-width: 100%;
+    font-family: Comfortaa;
+    color: #FFFFFF;
+    background-color: #171717;
+    margin: 0;
+}
+.head-header {
+    font-size: 30px;
+    font-weight: medium;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.head-header > a {
+    margin-left: 50px;
+}
+.bottom-header {
+    text-align: center;
+    font-weight: medium;
+    font-size: 96px;
+    vertical-align: middle;
+    margin-top: 200px;
+}
+.p2 {
+    font-size: 48px;
+}
+.AboutMe {
+    margin-left: auto;
+    margin-right: auto;
+}
+.AboutMe > img {
+    width: 100%;
+}
+.Projects {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    height: 254px;
+    transform: translate(0, 29%);
+}
+.imgs {
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgs > img {
+    width: 100%;
+}
+.footer {
+    transform: translate(0, 45%);
+}
+.footer > p {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-bottom {
+    font-size: 30px;
+    font-weight: medium;
+    display: flex;
+    justify-content: center;
+    height: 340px;
+    margin-right: 55px;
+}
+.footer-bottom > a {
+    margin-left: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    background-color: #171717;
   }
-  h1{
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 8em;
-      text-align: Center;
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-      margin-top: 0.3em;
-      margin-bottom: 0.3em;
-  }
+  .whr-drop-main > img {
+      width: 100%;
 
+  }
+  .whr-drop-hide {
+    display: block;
+  }
+.dropbtn1 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-decoration: underline;
+  }
+section > img {
+    width: 100%;
+}
 </style>
 
+
 <body>
-<h1>Hi! I'm Valeria Zevakina and I'm graphics designer</h1>
+  <div class="header">
+      <div class="head-header">
+          <span>I'm in telegram and vk:</span>
+          <a href="https://t.me/smetanushk"><img src="Image/Valeria_img/tg.svg"></a>
+          <a href="https://vk.com/smetanushk"><img src="Image/Valeria_img/vk.svg"></a>
+      </div>
+      <div class="bottom-header">
+          <p>Hi! I'm Valeria Zevakina, and..</p>
+          <p class="p2">.. I'm graphic designer.</p>
+      </div>
+  </div>
+  <div class="AboutMe">
+      <img src="Image/Valeria_img/Bio_main.png">
+  </div>
+  <div class="Projects">
+      <p>My Projects</p>
+  </div>
+  <div class="imgs">
+
+      <section id="first">
+          <img onclick="rollUpCsit()" class="dropbtn" src="Image/Valeria_img/CSIT_main.png">
+      </section>
+      <div id="myDropdown1" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/CSIT_Merch.png">
+              <img src="Image/Valeria_img/CSIT_Typography.png">
+              <img src="Image/Valeria_img/CSIT_Media.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpCsit()">Roll Up CSIT Project</span></div>
+          </div>
+      </div>
+
+      <section id="second">
+          <img onclick="rollUpDSC()" class="dropbtn" src="Image/Valeria_img/DSC_main.png">
+      </section>
+      <div id="myDropdown2" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/DSC_Media.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpDSC()">Roll Up Google DSC Project</span></div>
+          </div>
+      </div>
+
+      <section id="third">
+          <img onclick="rollUpNovikov()" class="dropbtn" src="Image/Valeria_img/Novikov_main.png">
+      </section>
+      <div id="myDropdown3" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/Novikov_Poly.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpNovikov()">Roll Up Dental Project</span></div>
+          </div>
+      </div>
+
+      <section id="fourth">
+          <img onclick="rollUpBoho()" class="dropbtn" src="Image/Valeria_img/Boho_main.png">
+      </section>
+      <div id="myDropdown4" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/Boho_Media.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpBoho()">Roll Up Boho.Planet Project</span></div>
+          </div>
+      </div>
+
+      <section id="fifth">
+          <img onclick="rollUpLoyal()" class="dropbtn" src="Image/Valeria_img/Loyal_main.png">
+      </section>
+      <div id="myDropdown5" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/Novikov_Poly.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpLoyal()">Roll Up LoyalMed Project</span></div>
+          </div>
+      </div>
+
+      <section id="sixth">
+          <img onclick="rollUpJedi()" class="dropbtn" src="Image/Valeria_img/Jedi_main.png">
+      </section>
+      <div id="myDropdown6" class="dropdown-content">
+          <div class="whr-drop-main">
+              <img src="Image/Valeria_img/Jedi_Typography.png">
+              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpJedi()">Roll Up Jedi.University Project</span></div>
+          </div>
+      </div>
+
+  </div>
+  <div class="footer">
+      <p>Let's go work together!</p>
+      <div class="footer-bottom">
+      <a href="https://t.me/smetanushk"><img src="Image/Valeria_img/tg.svg"></a>
+      <a href="https://vk.com/smetanushk"><img src="Image/Valeria_img/vk.svg"></a>
+      <a href="mailto:valeria.zevakina@yandex.ru">valeria.zevakina@yandex.ru</a>
+  </div>
 
 </body>
 </html>
