@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <link type="image/png" rel="icon" href="Image/favicon-256x256.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<style>
+
+body{
+  background-color: black;
+  color: #19456b;
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  float:left;
+}
+
+h1{
+  font-size: 6rem;
+  color: white;
+
+  text-align:center;
+  margin:auto;
+  vertical-align:middle;
+}
+
+#header{
+  width:100vw;
+  height:50vw;
+  background:linear-gradient(284.04deg, #ED213A 0%, #FFB7B5 81.77%, #FFC4C2 98.96%);
+}
+#behance{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(133.39deg, #4194E3 0%, #2A5AC8 100%);
+}
+#telegram{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(133.39deg, #4194E3 0%, #2A5AC8 100%);
+}
+#block1, #block2,
+#block3, #block4{
+  width:100vw;
+  height:50vw;
+  background:linear-gradient(104.04deg, #ED213A 0%, #FFB7B5 100%);
+}
+#youcon{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(314.5deg, #B1B7FE 0%, #71E2F0 99.14%);
+}
+#jedi{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(135deg, #434343 0%, #111111 100%);
+}
+#csit{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(114.25deg, #FF6B46 0%, #DC0036 100%);
+}
+#loyal{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
+}
+#novikov{
+  width:50vw;
+  height:50vw;
+  background:linear-gradient(135deg, #4BA3FF 0%, #042ED3 100%);
+}
+#ssu_rebrand{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(315deg, #000000 0%, #424242 100%);
+}
+#semafor{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(315deg, #188953 0%, #23F18E 100%);
+}
+#ssr{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(134.38deg, #FF9900 1.07%, #CB1D1E 100%);
+}
+#et1, #et2{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(118.53deg, #00B5BC 0%, #008489 100%);
+}
+#et3, #et4{
+  width:100vw;
+  height:50vw;
+  background: linear-gradient(118.53deg, #00B5BC 0%, #008489 100%);
+}
+#vnrk1, #vnrk2{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(124.66deg, #FBAC59 0%, #FF9055 100%);
+}
+#vnrk3, #vnrk4{
+  width:100vw;
+  height:50vw;
+  background: linear-gradient(124.66deg, #FBAC59 0%, #FF9055 100%);
+}
+#lt1, #lt2{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(190.35deg, #FFDF42 0%, #FFB235 65.63%);
+}
+#lt3, #lt4{
+  width:100vw;
+  height:50vw;
+  background: linear-gradient(190.35deg, #FFDF42 0%, #FFB235 65.63%);
+}
+#xz{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(315deg, #000000 0%, #2A2A35 100%);
+}
+#lwp{
+  width:50vw;
+  height:50vw;
+  background: linear-gradient(135deg, #EC645B 0%, #F9837B 0.01%, #DE392E 100%);
+}
+#futter{
+  width:100vw;
+  height:50vw;
+  background:linear-gradient(284.04deg, #ED213A 0%, #FFB7B5 81.77%, #FFC4C2 98.96%);
+}
+
+
+
+</style>
+
+<body>
+
+<div id="header">
+  <h1>Hi! I'm Max Kulakov<br>and I'm a Designer</h1>
+</div>
+
+<div id="behance"><h1>behance</h1></div>
+<div id="telegram"><h1>telegram</h1></div>
+
+<div id="block1"><h1>bio1</h1></div>
+<div id="block2"><h1>bio2</h1></div>
+
+<div id="youcon"><h1>youcon</h1></div>
+<div id="jedi"><h1>jedi.university</h1></div>
+<div id="csit"><h1>csit</h1></div>
+<div id="loyal"><h1>loyal</h1></div>
+<div id="novikov"><h1>novikov</h1></div>
+<div id="ssu_rebrand"><h1>ssu rebrand</h1></div>
+<div id="semafor"><h1>semafor</h1></div>
+<div id="ssr"><h1>ssr</h1></div>
+<div id="block3"><h1>products</h1></div>
+
+<div id="et1"><h1>easy-travelling 1</h1></div>
+<div id="et2"><h1>easy-travelling 2</h1></div>
+<div id="et3"><h1>easy-travelling 3</h1></div>
+<div id="et4"><h1>easy-travelling 4</h1></div>
+
+<div id="vnrk1"><h1>venrok 1</h1></div>
+<div id="vnrk2"><h1>venrok 2</h1></div>
+<div id="vnrk3"><h1>venrok 3</h1></div>
+<div id="vnrk4"><h1>venrok 4</h1></div>
+
+<div id="lt1"><h1>lifetables 1</h1></div>
+<div id="lt2"><h1>lifetables 2</h1></div>
+<div id="lt3"><h1>lifetables 3</h1></div>
+<div id="lt4"><h1>lifetables 4</h1></div>
+
+<div id="block4"><h1>other projects</h1></div>
+
+<div id="xz"><h1>Х:З</h1></div>
+<div id="lwp"><h1>Life Wallpapers</h1></div>
+
+<div id="futter"><h1>Lets go work together</h1></div>
+
+</html>
