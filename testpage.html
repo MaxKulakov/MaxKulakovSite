@@ -25,13 +25,14 @@ div{
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
-  float:left;
-  display: table;
+  display: flex;
 }
 
 h1{
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 5vw;
   color: white;
 
@@ -146,7 +147,20 @@ h1{
   background:linear-gradient(284.04deg, #ED213A 0%, #FFB7B5 81.77%, #FFC4C2 98.96%);
 }
 
-
+.contact{
+  display: flex;
+}
+.projects1, .projects2,
+.projects3, .projects4{
+  display: flex;
+}
+.et, .vnrk,
+.lt{
+  display: flex;
+}
+.oth_project{
+  display: flex;
+}
 
 </style>
 
@@ -156,42 +170,62 @@ h1{
   <h1 style="font-size: 10vw;">Hi! I'm Max Kulakov<br>and I'm a Designer</h1>
 </div>
 
-<div id="behance"><h1>behance</h1></div>
-<div id="telegram"><h1>telegram</h1></div>
+<div class="contact">
+  <div id="behance"><h1>behance</h1></div>
+  <div id="telegram"><h1>telegram</h1></div>
+</div>
+
 
 <div id="block1"><h1>bio1</h1></div>
 <div id="block2"><h1>bio2</h1></div>
 
+<div class="projects1">
 <div id="youcon"><h1>youcon</h1></div>
 <div id="jedi"><h1>jedi.university</h1></div>
+</div>
+<div class="projects2">
 <div id="csit"><h1>csit</h1></div>
 <div id="loyal"><h1>loyal</h1></div>
+</div>
+<div class="projects3">
 <div id="novikov"><h1>novikov</h1></div>
 <div id="ssu_rebrand"><h1>ssu rebrand</h1></div>
+</div>
+<div class="projects4">
 <div id="semafor"><h1>semafor</h1></div>
 <div id="ssr"><h1>ssr</h1></div>
+</div>
+
 
 <div id="block3"><h1 style="font-size: 10vw;">products</h1></div>
 
+<div class="et">
 <div id="et1"><h1>easy-travelling 1</h1></div>
 <div id="et2"><h1>easy-travelling 2</h1></div>
+</div>
 <div id="et3"><h1>easy-travelling 3</h1></div>
 <div id="et4"><h1>easy-travelling 4</h1></div>
 
+<div class="vnrk">
 <div id="vnrk1"><h1>venrok 1</h1></div>
 <div id="vnrk2"><h1>venrok 2</h1></div>
+</div>
 <div id="vnrk3"><h1>venrok 3</h1></div>
 <div id="vnrk4"><h1>venrok 4</h1></div>
 
+<div class="lt">
 <div id="lt1"><h1>lifetables 1</h1></div>
 <div id="lt2"><h1>lifetables 2</h1></div>
+</div>
 <div id="lt3"><h1>lifetables 3</h1></div>
 <div id="lt4"><h1>lifetables 4</h1></div>
 
 <div id="block4"><h1 style="font-size: 10vw;">other projects</h1></div>
 
+<div class="oth_project">
 <div id="xz"><h1>Х:З</h1></div>
 <div id="lwp"><h1>Life Wallpapers</h1></div>
+</div>
 
 <div id="futter"><h1 style="font-size: 10vw;">Lets go work together</h1></div>
 
