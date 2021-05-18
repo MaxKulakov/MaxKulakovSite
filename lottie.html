@@ -44,11 +44,11 @@
     color: #323232;
     font-weight: 400;
 
-    position: fixed; /* Фиксированное положение */
-    left: 0; bottom: 0; /* Левый нижний угол */
+    position: fixed;
+    left: 0; bottom: 0;
     text-align: center;
-    padding: 10px; /* Поля вокруг текста */
-    width: 100%; /* Ширина слоя */
+    padding: 10px;
+    width: 100%;
     z-index: 10000;
   }
 
@@ -58,9 +58,9 @@
 
 <body>
 
-<h1 id = "textd">ты пидор</h1>
+<h1 id = "textd">ты ангел</h1>
 <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xzu7hgpf.json" background="transparent"  speed="1"  style="width: 100vw; height: 100vh;" loop /*controls*/ autoplay></lottie-player>
-<h2 onclick="location.reload();" >Обнови страницу 😉</h2>
+<!--h2 onclick="location.reload();" >Обновить страницу 😉</h2-->
 </body>
 
 <script>
@@ -71,10 +71,17 @@
     return Math.round(rand);
   }
 
-  var array = new Array("пидор", "умничка", "котик", "зая", "пидор", "солнце", "лапа",
-  "тупой", "устал?");
+  // var array = new Array("пидор", "умничка", "котик", "зая", "солнце", "лапа", "устал?");
 
-  document.body.innerHTML = document.body.innerHTML.replace('ты пидор', 'ты ' + array[randomInteger(0, 8)]);
+  function replaceText(){
+    var array = new Array("пидор", "умничка", "котик", "зая", "солнце", "лапа", "устал?",
+    "булочка", "ёжик", "лютик", "умка", "чудо");
+    document.getElementById('textd').innerHTML = "ты " + array[randomInteger(0, 11)];
+  }
+
+  setInterval(replaceText, 1500)
+
+
 
 </script>
 
