@@ -14,13 +14,15 @@
 
 body{
   background-color: black;
-  color: #19456b;
+  color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: Montserrat;
 }
 
 div{
-  width: 100%;
+  width: 100vw;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -33,11 +35,21 @@ h1{
   align-items: center;
   justify-content: center;
 
-  font-size: 5vw;
+  font-size: 9vw;
   color: white;
 
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
+}
+
+h3{
+  font-size: 1.8vw;
+  color: white;
+  font-weight: 400;
+
+  /* margin:auto;
+  margin-left: 3vw;
+  margin-right: 3vw; */
 }
 
 #header{
@@ -45,17 +57,42 @@ h1{
   height:50vw;
   background:linear-gradient(284.04deg, #ED213A 0%, #FFB7B5 81.77%, #FFC4C2 98.96%);
 }
+
 #behance{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(133.39deg, #4194E3 0%, #2A5AC8 100%);
 }
 #telegram{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(133.39deg, #4194E3 0%, #2A5AC8 100%);
 }
-#block1, #block2,
+
+#block1{
+  display: flex;
+  flex-direction: column;
+
+  width:100vw;
+  height:50vw;
+  background:linear-gradient(104.04deg, #ED213A 0%, #FFB7B5 100%);
+}
+
+#block2,
 #block3, #block4{
   width:100vw;
   height:50vw;
@@ -64,46 +101,111 @@ h1{
 #youcon{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(314.5deg, #B1B7FE 0%, #71E2F0 99.14%);
 }
 #jedi{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(135deg, #434343 0%, #111111 100%);
 }
 #csit{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(114.25deg, #FF6B46 0%, #DC0036 100%);
 }
 #loyal{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
 }
 #novikov{
   width:50vw;
   height:50vw;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background:linear-gradient(135deg, #4BA3FF 0%, #042ED3 100%);
 }
 #ssu_rebrand{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(315deg, #000000 0%, #424242 100%);
 }
 #semafor{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(315deg, #188953 0%, #23F18E 100%);
 }
 #ssr{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(134.38deg, #FF9900 1.07%, #CB1D1E 100%);
 }
 #et1, #et2{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(118.53deg, #00B5BC 0%, #008489 100%);
 }
 #et3, #et4{
@@ -114,6 +216,13 @@ h1{
 #vnrk1, #vnrk2{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(124.66deg, #FBAC59 0%, #FF9055 100%);
 }
 #vnrk3, #vnrk4{
@@ -124,6 +233,13 @@ h1{
 #lt1, #lt2{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(190.35deg, #FFDF42 0%, #FFB235 65.63%);
 }
 #lt3, #lt4{
@@ -134,11 +250,25 @@ h1{
 #xz{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(315deg, #000000 0%, #2A2A35 100%);
 }
 #lwp{
   width:50vw;
   height:50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
   background: linear-gradient(135deg, #EC645B 0%, #F9837B 0.01%, #DE392E 100%);
 }
 #futter{
@@ -162,71 +292,159 @@ h1{
   display: flex;
 }
 
+.header__face {
+  position: absolute;
+  height: 50vw;
+}
+
 </style>
 
 <body>
 
 <div id="header">
-  <h1 style="font-size: 10vw;">Hi! I'm Max Kulakov<br>and I'm a Designer</h1>
+    <h1 style="z-index: 1;">Hi! I'm Max Kulakov<br>and I'm a Designer</h1>
+        <img class="header__face" src="base/im.png"/>
 </div>
 
 <div class="contact">
-  <div id="behance"><h1>behance</h1></div>
-  <div id="telegram"><h1>telegram</h1></div>
+  <div id="behance">
+    <img style="height: 10vw;" src="base/behance_ico.svg">
+    <h3>MY BEHANCE</h3></div>
+
+  <div id="telegram">
+    <img style="height: 10vw;" src="base/telegram_ico.svg">
+    <h3>MY TELEGRAM</h3></div>
 </div>
 
+<div id="block1">
+  <h3 style="margin-bottom:0vw;">At the moment I am a product designer
+    in two start-up projects, I live in Saratov and I am a third year student
+    at SSU, at the Faculty of Computer Science and Information Technology</h3>
+  <h3>I have been actively designing since 2018. I've started
+    as a graphic designer and over time realised that the topic
+    of interface and the product design in general was of much
+    more interest. So in the spring of 2019 I've decided to expand
+    my specialisation and cover a new area. During this time,
+    I managed to participate in several projects, such as: Venrok sports app,
+    Lifetables habits tracker and Easy-traveling travel selection</h3>
+</div>
 
-<div id="block1"><h1>bio1</h1></div>
-<div id="block2"><h1>bio2</h1></div>
+<div id="block2">
+  <h3>At the same time, I've been working with various companies
+    on visual and identity issues and managed to implement cases
+    for three events of Youcon Events Group, Jedi.University University,
+    SSU CSIT, SSU Rebranding, Vladimir Novikov's Personal Dental Center,
+    LoyalMed loyalty service and beyond</h3>
+</div>
+
 
 <div class="projects1">
-<div id="youcon"><h1>youcon</h1></div>
-<div id="jedi"><h1>jedi.university</h1></div>
+  <div id="youcon">
+    <img src="base/youcon_logo.png">
+    <h3>YOUCON EVENTS GROUP</h3>
+  </div>
+  <div id="jedi">
+    <img style="height:10vw;" src="base/jedi_logo.svg">
+    <h3>JEDI.UNIVERSITY</h3>
+  </div>
 </div>
+
+
 <div class="projects2">
-<div id="csit"><h1>csit</h1></div>
-<div id="loyal"><h1>loyal</h1></div>
+  <div id="csit">
+    <img src="base/CSIT_logo.svg">
+    <h3>SSU CSIT</h3>
+  </div>
+  <div id="loyal">
+    <img src="base/loyal_logo.svg">
+    <h3>LOYALMED</h3>
+  </div>
 </div>
+
+
 <div class="projects3">
-<div id="novikov"><h1>novikov</h1></div>
-<div id="ssu_rebrand"><h1>ssu rebrand</h1></div>
+  <div id="novikov">
+    <img src="base/novikov_logo.svg">
+    <h3>VLADIMIR NOVIKOV<br>PERSONAL DENTAL CENTER</h3>
+  </div>
+  <div id="ssu_rebrand">
+    <img src="base/ssu_rebrand_logo.svg">
+    <h3>SSU REBRANDING</h3>
+  </div>
 </div>
+
+
 <div class="projects4">
-<div id="semafor"><h1>semafor</h1></div>
-<div id="ssr"><h1>ssr</h1></div>
+  <div id="semafor">
+    <img src="base/semafor_logo.svg">
+    <h3>SEMAFOR</h3>
+  </div>
+  <div id="ssr">
+    <img src="base/ssr_logo.svg">
+    <h3>SSR</h3>
+  </div>
 </div>
 
 
-<div id="block3"><h1 style="font-size: 10vw;">products</h1></div>
+<div id="block3">
+  <h1>A little more details
+  <br>about the products</h1>
+</div>
+
 
 <div class="et">
-<div id="et1"><h1>easy-travelling 1</h1></div>
-<div id="et2"><h1>easy-travelling 2</h1></div>
+  <div id="et1">
+    <img src="base/et_logo.png">
+    <h3>EASY-TRAVELLING</h3>
+  </div>
+  <div id="et2">
+    <h3>easy-travelling 2</h3>
+  </div>
 </div>
-<div id="et3"><h1>easy-travelling 3</h1></div>
-<div id="et4"><h1>easy-travelling 4</h1></div>
+<div id="et3"><h3>easy-travelling 3</h3></div>
+<div id="et4">
+  <img style="position: absolute; width: 100vw;" src="base/et_mock.png">
+</div>
+
 
 <div class="vnrk">
-<div id="vnrk1"><h1>venrok 1</h1></div>
-<div id="vnrk2"><h1>venrok 2</h1></div>
+  <div id="vnrk1">
+    <img src="base/vnrk_logo.svg">
+    <h3>VENROK</h3>
+  </div>
+  <div id="vnrk2"><h3>venrok 2</h3></div>
 </div>
-<div id="vnrk3"><h1>venrok 3</h1></div>
-<div id="vnrk4"><h1>venrok 4</h1></div>
+<div id="vnrk3"><h3>venrok 3</h3></div>
+<div id="vnrk4">
+  <img style="position: absolute; width: 100vw;" src="base/vnrk_mock.png">
+</div>
 
 <div class="lt">
-<div id="lt1"><h1>lifetables 1</h1></div>
-<div id="lt2"><h1>lifetables 2</h1></div>
+  <div id="lt1">
+    <img src="base/lt_logo.png">
+    <h3>LIFETABLES</h3>
+  </div>
+<div id="lt2"><h3>lifetables 2</h3></div>
 </div>
-<div id="lt3"><h1>lifetables 3</h1></div>
-<div id="lt4"><h1>lifetables 4</h1></div>
+<div id="lt3"><h3>lifetables 3</h3></div>
+<div id="lt4">
+  <img style="position: absolute; width: 100vw;" src="base/lt_mock.png">
+</div>
 
-<div id="block4"><h1 style="font-size: 10vw;">other projects</h1></div>
+<div id="block4"><h1>Other Projects</h1></div>
 
 <div class="oth_project">
-<div id="xz"><h1>Х:З</h1></div>
-<div id="lwp"><h1>Life Wallpapers</h1></div>
+  <div id="xz">
+    <img src="base/xz_logo.svg">
+    <h3>Х:З</h3>
+  </div>
+  <div id="lwp">
+    <img src="base/dw_logo.svg">
+    <h3>DYNAMIC WALLPAPERS</h3>
+  </div>
 </div>
 
-<div id="futter"><h1 style="font-size: 10vw;">Lets go work together</h1></div>
+<div id="futter"><h1>Lets go work together</h1></div>
 
+</body>
 </html>
