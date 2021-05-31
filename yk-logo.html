@@ -10,32 +10,119 @@
 </head>
 
 <body>
+<div class="img_plus_logo">
+  <div class="img_plus_logo_block">
+    <img id="img_logo" src="logo_comb/yak_1.svg">
+    <img id="img_text" src="logo_comb/text_14.svg">
+  </div>
+</div>
 
-<h1 id = "textd">YKSOFT</h1>
+<div class="text_block">
+  <h3 id="link_first">Логотип 1</h3>
+  <h3 id="link_second">Текст 14</h3>
+</div>
+
+<button id="stop_button" onclick="StartStopFunction()">Stop Animate</button>
+
+<!-- <h1 id = "textd">YKSOFT</h1> -->
 <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xzu7hgpf.json" background="transparent"  speed="1"  style="width: 100vw; height: 100vh;" loop /*controls*/ autoplay></lottie-player> -->
-<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_hq7nbw6i.json" background="transparent"  speed="1"  style="width: 100vw; height: 110vh;" loop /*controls*/ autoplay></lottie-player>
+<!-- <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_hq7nbw6i.json" background="transparent"  speed="1"  style="width: 100vw; height: 110vh;" loop /*controls*/ autoplay></lottie-player> -->
 
 
 <!--h2 onclick="location.reload();" >Обновить страницу 😉</h2-->
 </body>
 </html>
 
+
 <script>
+  var logoArray = new Array("logo_comb/yak_1.svg",
+                            "logo_comb/yak_2.svg",
+                            "logo_comb/yak_3.svg",
+                            "logo_comb/yak_4.svg",
+                            "logo_comb/yak_5.svg",
+                            "logo_comb/yak_6.svg",
+                            "logo_comb/yak_7.svg",
+                            "logo_comb/yak_8.svg",
+                            "logo_comb/yak_9.svg",
+                            "logo_comb/yak_10.svg",
+                            "logo_comb/yak_11.svg",
+                            "logo_comb/yak_12.svg",
+                            "logo_comb/yak_13.svg",
+                            "logo_comb/yak_14.svg",
+                            "logo_comb/yak_15.svg",
+                            "logo_comb/yak_16.svg",
+                            "logo_comb/yak_17.svg",
+                            "logo_comb/yak_18.svg",
+                            "logo_comb/yak_19.svg",
+                            "logo_comb/yak_20.svg",
+                            "logo_comb/yak_21.svg",
+                          );
+
+  var textArray = new Array("logo_comb/text_01.svg",
+                            "logo_comb/text_02.svg",
+                            "logo_comb/text_03.svg",
+                            "logo_comb/text_04.svg",
+                            "logo_comb/text_05.svg",
+                            "logo_comb/text_06.svg",
+                            "logo_comb/text_07.svg",
+                            "logo_comb/text_08.svg",
+                            "logo_comb/text_09.svg",
+                            "logo_comb/text_10.svg",
+                            "logo_comb/text_11.svg",
+                            "logo_comb/text_12.svg",
+                            "logo_comb/text_13.svg",
+                            "logo_comb/text_14.svg",
+                            "logo_comb/text_15.svg",
+                            "logo_comb/text_16.svg",
+                            "logo_comb/text_17.svg",
+                            "logo_comb/text_18.svg",
+                            "logo_comb/text_19.svg",
+                            "logo_comb/text_20.svg",
+                            "logo_comb/text_21.svg",
+                            "logo_comb/text_22.svg",
+                            "logo_comb/text_23.svg",
+                            "logo_comb/text_24.svg",
+                            "logo_comb/text_25.svg",
+                            "logo_comb/text_26.svg",
+                            "logo_comb/text_27.svg",
+                            "logo_comb/text_28.svg",
+                            "logo_comb/text_29.svg",
+                          );
+
   function randomInteger(min, max) {
     let rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
   }
 
-  function replaceText(){
-    var array = new Array("пидор", "умничка", "котик", "зая", "солнце", "лапа", "устал?",
-    "булочка", "ёжик", "лютик", "умка", "чудо");
-    document.getElementById('textd').innerHTML = "ты " + array[randomInteger(0, 11)];
+  let isPlay = true;
+  function StartStopFunction(){
+    isPlay = !isPlay;
+    if (!isPlay){
+      clearInterval(st_int);
+      document.getElementById('stop_button').innerHTML = "Start Animate";
+    }
+    else {
+      st_int = setInterval(replaceContent, 3000);
+      document.getElementById('stop_button').innerHTML = "Stop Animate";
+    }
   }
-  setInterval(replaceText, 1500)
+
+  function replaceContent(){
+    var firstRnd = randomInteger(0, 20);
+    document.getElementById("img_logo").setAttribute("src", logoArray[firstRnd]);
+    document.getElementById('link_first').innerHTML = "Логотип "  + (firstRnd + 1);
+
+    var secondRnd = randomInteger(0, 28);
+    document.getElementById("img_text").setAttribute("src", textArray[secondRnd]);
+    document.getElementById('link_second').innerHTML = "Текст " + (secondRnd + 1);
+  }
+
+   var st_int = setInterval(replaceContent, 3000);
+
 </script>
 
-<style>
 
+<style>
   lottie-player {
 	--lottie-player-seeker-track-color: #e48509;
 	--lottie-player-seeker-thumb-color: #ffcc00;
@@ -75,4 +162,82 @@
     width: 100%;
     z-index: 10000;
   }
+
+  h3{
+    width: 15vw;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 400;
+  }
+
+  #img_logo, #img_text {
+    height: 20vw;
+    display: block;
+    margin-left: 0;
+  }
+
+.img_plus_logo {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  margin: 0;
+}
+
+.img_plus_logo_block {
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+.text_block{
+
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw;
+
+  position: fixed;
+  left: 0; bottom: 0;
+  /* text-align: center; */
+  padding: 100px;
+  width: 100%;
+  z-index: 10000;
+}
+
+button {
+  background-color: rgba(196, 196, 196, 0);
+  border: none;
+  /* color: #F02F5D; */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 800;
+
+  position: fixed;
+  left: 0; bottom: 0;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  z-index: 100020;
+}
+
+button:hover{
+  color: #FEAEC1;
+}
+
 </style>
