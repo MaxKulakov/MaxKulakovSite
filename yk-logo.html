@@ -27,7 +27,7 @@
   <h3 id="link_second">Текст 18</h3>
 </div>
 
-<button id="stop_button" onclick="StartStopFunction()">Stop Animate</button>
+<button id="stop_button" onclick="StartStopFunction()">Stop Selection</button>
 
 <!-- <h1 id = "textd">YKSOFT</h1> -->
 <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xzu7hgpf.json" background="transparent"  speed="1"  style="width: 100vw; height: 100vh;" loop /*controls*/ autoplay></lottie-player> -->
@@ -113,11 +113,11 @@
     isPlay = !isPlay;
     if (!isPlay){
       clearInterval(st_int);
-      document.getElementById('stop_button').innerHTML = "Start Animate";
+      document.getElementById('stop_button').innerHTML = "Start Selection";
     }
     else {
       st_int = setInterval(replaceContent, 4000);
-      document.getElementById('stop_button').innerHTML = "Stop Animate";
+      document.getElementById('stop_button').innerHTML = "Stop Selection";
     }
   }
 
