@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #F5F5F5;
+    color: #121212;
+}
+
+.h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+li {
+    font-weight: 400;
+}
+
+.description {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 0px) {
+    .firstScreen {
+        height: auto;
+        /* min-height: 100vh; */
+        min-height: calc(var(--vh, 1vh) * 100)  /* mb 95 */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .firstScreen {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .container{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+} */
+
+li:hover {
+    color: #121212;
+    opacity: 0.5;
+}
+
+a {
+    color: #121212;
+}
+
+
+.no-underline {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #121212;
+    opacity: 0.5;
+}
+
+a:active {
+    color: #121212;
+    opacity: 0.75;
+}
+
+footer {
+    height: 40vw;
+    min-height: 300px;
+    max-height: 480px;
+}
+
+.logo-image {
+    max-height: 120px;
+
+}
+
+.text-with-arrow{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ .logo-image:hover {
+    -webkit-filter: none;
+    filter: none; 
+}
+
+.logo-image {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+
+/* projects */
+
+.accordion-button {
+    /* background-color: inherit; */
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+
+    /* mb need fix for left and right padding */
+    padding: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* mb need fix for left and right padding */
+    
+    /* transition: none; */
+}
+
+.accordion-body{
+    background-color: #F5F5F5;
+    
+    /* mb need fix for left and right padding */
+    padding: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* mb need fix for left and right padding */
+}
+
+.accordion-button:not(.collapsed){
+    color: #121212;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+    box-shadow: none;
+}
+
+
+.accordion-button:focus{
+    border-color: #F5F5F5;
+    background-color: #F5F5F5;
+    box-shadow: none;
+}
+
+.accordion-button:active{
+    border-color: #F5F5F5;
+    background-color: #F5F5F5;
+}
+
+.accordion-item{
+    border: 0;
+}
+
+.accordion-button::after {
+    margin-left: 4px;
+
+    /* need fix load rotate! */
+    background-image: url("../images/home/up-drop-icon.svg");
+
+
+
+    /* need fix load rotate! */
+
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    /* need fix load rotate! */
+    background-image: url("../images/home/down-drop-icon.svg");
+
+    transform: rotate(180deg);
+    /* need fix load rotate! */
+}
+
+
+
+
+/* projects */
