@@ -10,7 +10,7 @@ let day = date.getDate();
 let month = date.getMonth() + 1;
 let year = date.getFullYear();
 
-let day_1 = new Date(2021, 04, 25),
+let day_1 = new Date(2021, 4, 25),
     day_2 = new Date(year, month, day);
 
 function diffDates(day_one, day_two) {
