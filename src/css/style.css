@@ -92,6 +92,8 @@ footer {
 }
 
 
+
+
 /* projects */
 
 .accordion-button {
@@ -159,10 +161,13 @@ footer {
     background-image: url("../images/home/down-drop-icon.svg");
 
     transform: rotate(180deg);
+    /* transform: none; */
     /* need fix load rotate! */
 }
 
 
-
+.accordion-button::after {
+    /* transition: none; */
+}
 
 /* projects */
