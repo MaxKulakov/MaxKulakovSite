@@ -146,28 +146,18 @@ footer {
 .accordion-button::after {
     margin-left: 4px;
 
-    /* need fix load rotate! */
     background-image: url("../images/home/up-drop-icon.svg");
-
-
-
-    /* need fix load rotate! */
-
 }
 
 
 .accordion-button:not(.collapsed)::after {
-    /* need fix load rotate! */
     background-image: url("../images/home/down-drop-icon.svg");
-
-    transform: rotate(180deg);
-    /* transform: none; */
-    /* need fix load rotate! */
+    transform: rotate(-90deg);
 }
 
 
 .accordion-button::after {
-    /* transition: none; */
+    transform: rotate(0deg);
 }
 
 /* projects */
