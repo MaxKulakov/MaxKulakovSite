@@ -13,6 +13,9 @@ let year = date.getFullYear();
 let day_1 = new Date(2021, 4, 25),
     day_2 = new Date(year, month, day);
 
+let day_1_ed = new Date(2022, 9, 1),
+    day_2_ed = new Date(year, month, day);
+
 function diffDates(day_one, day_two) {
     return (day_one - day_two) / (60 * 60 * 24 * 1000);
 };
@@ -27,3 +30,5 @@ function getFormatedStringFromDays(numberOfDays) {
 }
 
 document.getElementById("current-time-work").innerHTML = getFormatedStringFromDays(diffDates(day_2, day_1));
+
+document.getElementById("current-time-education").innerHTML = getFormatedStringFromDays(diffDates(day_2_ed, day_1_ed));
