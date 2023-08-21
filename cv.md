@@ -26,7 +26,7 @@ Saratov State University, CSIT Faculty, Bachelor's degree
 
 
 ## Experiences
-- 2021-2022. YKSoft
+- 2021-Current Time. YKSoft
 - 2020-2021. Lifetables
 - 2019-2021. Venrok
 - 2019-2021. Jedi.University
