@@ -38,7 +38,7 @@ Saratov State University, CSIT Faculty, Bachelor's degree
 
 
 # More details about projects
-### 2021-2022. YKSoft
+### 2021-2023. YKSoft
 [yksoft.ru](https://yksoft.ru)
 
 > Website design development
