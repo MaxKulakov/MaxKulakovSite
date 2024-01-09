@@ -7,6 +7,8 @@
 </head>
 <body>
 
+
+    <!-- comment if u want unfreeze  -->
     <svg>
         <filter
           id="pixelate"
@@ -20,10 +22,13 @@
 
     <div class="filter-div"></div>
 
-    <video id="myVidPlayer" controls muted autoplay></video>
+    <video class="webcam-video" id="myVidPlayer" controls muted autoplay></video>
 
-    <img class="aqua" src="https://images.unsplash.com/photo-1566812201627-d2ebc5b056f9?q=80&w=3135&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    
+
+    <!-- <img class="aqua" src="https://images.unsplash.com/photo-1566812201627-d2ebc5b056f9?q=80&w=3135&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
+    <video id="video_background" class="aqua" preload="auto" no-controls autoplay loop playsinline muted >
+      <source src="video.mp4" type='video/mp4' />
+    </video>
 
 
     <script type="text/javascript">
@@ -69,7 +74,7 @@
         filter: blur(1px);
     } */
 
-    video {
+    .webcam-video {
         opacity: 0.3;
         width: 100vw;
         height: 100vh;
