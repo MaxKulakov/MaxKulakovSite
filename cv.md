@@ -54,7 +54,7 @@ Saratov State University, CSIT Faculty, Bachelor's degree
 - [Osnova Group](https://gk-osnova.ru)  
 - [RED7](https://red-7.ru)  
 - [Mainstreet](https://zk-mainstreet.ru)
-- [UNO.Starokoptevskit](https://uno.moscow/starokoptevskij/)
+- [UNO.Starokoptevskiy](https://uno.moscow/starokoptevskij/)
 - [UNO.Golovinskie Prudy](https://uno.moscow/golovinskie-prudy/)
 - [Nametkin Tower](https://nametkin-tower.ru)
 - [FiztekhCity](https://fizteh.city)
