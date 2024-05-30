@@ -24,7 +24,7 @@ function getFormatedStringFromDays(numberOfDays) {
     var years = Math.floor(numberOfDays / 365);
     var months = Math.floor(numberOfDays % 365 / 30);
 
-    var yearsDisplay = years > 0 ? years + (years == 1 ? " год " : " лет ") : "";
+    var yearsDisplay = years > 0 ? years + (years == 1 ? " год " : " года ") : "";
     var monthsDisplay = months > 0 ? months + (months == 1 ? " месяц " : " месяцев ") : "";
     return yearsDisplay + monthsDisplay; 
 }
